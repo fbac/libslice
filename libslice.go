@@ -32,6 +32,6 @@ func GetFirstN[sT sliceType](slice []sT, n int) []sT {
 }
 
 func GetLastN[sT sliceType](slice []sT, n int) []sT {
-	slice = slice[n+1:]
+	slice = slice[n:]
 	return slice
 }

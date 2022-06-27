@@ -7,3 +7,4 @@
 ### TODO
 - Add inline documentation
 - Add more operations
+- Fix test properly

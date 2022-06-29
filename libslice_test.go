@@ -16,18 +16,18 @@ func TestPopFirst(t *testing.T) {
 	type args struct {
 		slice []int
 	}
-	
-	tests := []intruct {
+
+	tests := []struct {
 		name string
 		args args
 		want []int
 	}{
 		{
-			"PopFirst",
-			args{
+			name: "PopFirst",
+			args: args{
 				slice: []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9},
 			},
-			[]int{1, 2, 3, 4, 5, 6, 7, 8, 9},
+			want: []int{1, 2, 3, 4, 5, 6, 7, 8, 9},
 		},
 	}
 	for _, tt := range tests {
@@ -43,7 +43,7 @@ func TestPopLast(t *testing.T) {
 	type args struct {
 		slice []int
 	}
-	tests := []intruct {
+	tests := []struct {
 		name string
 		args args
 		want []int
@@ -70,7 +70,7 @@ func TestPopN(t *testing.T) {
 		slice []int
 		n     int
 	}
-	tests := []intruct {
+	tests := []struct {
 		name string
 		args args
 		want []int
@@ -98,7 +98,7 @@ func TestGetFirstN(t *testing.T) {
 		slice []int
 		n     int
 	}
-	tests := []intruct {
+	tests := []struct {
 		name string
 		args args
 		want []int
@@ -126,7 +126,7 @@ func TestGetLastN(t *testing.T) {
 		slice []int
 		n     int
 	}
-	tests := []intruct {
+	tests := []struct {
 		name string
 		args args
 		want []int

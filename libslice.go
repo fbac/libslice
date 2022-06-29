@@ -51,6 +51,6 @@ func GetFirstN[sT sliceType](slice []sT, n int) []sT {
 
 // Return a slice containing the last n items
 func GetLastN[sT sliceType](slice []sT, n int) []sT {
-	ret := slice[n+1:]
+	ret := slice[len(slice)-n:]
 	return ret
 }

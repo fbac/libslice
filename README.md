@@ -5,6 +5,5 @@
 - Gain a bit of quality of life when using slices
 
 ### TODO
-- Add inline documentation
 - Add more operations
-- Fix test properly
+

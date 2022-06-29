@@ -33,7 +33,7 @@ func PopLast[sT sliceType](slice []sT) []sT {
 // a pointer to the underlying array, len and cap
 // and we modify it in memory
 // example:
-// [a] original slice:     		  [0 1 2 3 4]
+// [a] original slice:     	  [0 1 2 3 4]
 // [b] result of PopN(a, 1):      [0 2 3 4]
 // [a] original slice after PopN: [0 2 3 4 4]
 // a is modified, it preserves len(5)
